@@ -1,5 +1,4 @@
-import { ReactElement, ReactNode, useEffect, useState } from "react";
-import { JsxElement, JsxFragment } from "typescript";
+import { ReactElement, useEffect, useState } from "react";
 
 export interface teamName {
   symbol: string;

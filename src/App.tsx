@@ -56,7 +56,10 @@ function App() {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:3000/games?gameId=${gameId}`)
+    console.log(process.env.REACT_APP_SERVER);
+    fetch(
+      `http://${process.env.REACT_APP_SERVER}:${process.env.REACT_APP_SERVER_PORT}/games?gameId=${gameId}`
+    )
       .then((response) => response.json())
       .then((data) => {
         setGameData({

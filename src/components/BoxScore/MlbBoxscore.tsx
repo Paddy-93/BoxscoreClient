@@ -1,4 +1,4 @@
-import React, { ReactElement, useEffect, useState } from "react";
+import { ReactElement, useEffect, useState } from "react";
 import Boxscore, { getTotalScore } from "./Boxscore";
 import { BoxscoreProps } from "./Boxscore";
 
